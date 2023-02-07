@@ -1,5 +1,8 @@
-# About SearXNG
+# About Kimsec-Search
+This search engine is a forked project from SearXNG which is just editied for personal 
+preferences - while still keep the anonymouse and no tracking part in it. 
 
+# About SearXNG
 SearXNG is a [metasearch engine], aggregating the results of other
 {{link('search engines', 'preferences')}} while not storing information about
 its users.

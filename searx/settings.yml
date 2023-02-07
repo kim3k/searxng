@@ -118,7 +118,7 @@ ui:
   # results_on_new_tab: false
   theme_args:
     # style of simple theme: auto, light, dark
-    simple_style: auto
+    simple_style: dark
 
 # Lock arbitrary settings on the preferences page.  To find the ID of the user
 # setting you want to lock, check the ID of the form on the page "preferences".
@@ -314,6 +314,7 @@ engines:
   - name: arch linux wiki
     engine: archlinux
     shortcut: al
+    disabled: true
 
   - name: archive is
     engine: xpath
@@ -338,6 +339,7 @@ engines:
     engine: artic
     shortcut: arc
     timeout: 4.0
+    disabled: true
 
   - name: arxiv
     engine: arxiv
@@ -362,7 +364,7 @@ engines:
   - name: bing
     engine: bing
     shortcut: bi
-    disabled: true
+    disabled: false
 
   - name: bing images
     engine: bing_images
@@ -424,6 +426,7 @@ engines:
     engine: openverse
     categories: images
     shortcut: opv
+    disabled: true
 
   # - name: core.ac.uk
   #   engine: core
@@ -481,6 +484,7 @@ engines:
     engine: currency_convert
     categories: general
     shortcut: cc
+    disabled: true
 
   - name: deezer
     engine: deezer
@@ -491,6 +495,7 @@ engines:
     engine: deviantart
     shortcut: da
     timeout: 3.0
+    disabled: true
 
   - name: ddg definitions
     engine: duckduckgo_definitions
@@ -551,6 +556,7 @@ engines:
     timeout: 3.0
     weight: 2
     tests: *tests_infobox
+    disabled: true
 
   - name: duckduckgo
     engine: duckduckgo
@@ -643,7 +649,7 @@ engines:
     # * nearmatch - nearmatch in title
     search_type: title
     timeout: 5.0
-    disabled: true
+    disabled: false
     about:
       website: https://directory.fsf.org/
       wikidata_id: Q2470288
@@ -676,6 +682,7 @@ engines:
   - name: gentoo
     engine: gentoo
     shortcut: ge
+    disabled: true
 
   - name: gitlab
     engine: json_engine
@@ -843,6 +850,7 @@ engines:
     content_xpath: './/div[@class="from"]'
     page_size: 20
     categories: [it, packages]
+    disabled: true
     shortcut: ho
     about:
       website: https://hoogle.haskell.org/
@@ -926,10 +934,12 @@ engines:
     engine: loc
     shortcut: loc
     categories: images
+    disabled: true
 
   - name: lingva
     engine: lingva
     shortcut: lv
+    disabled: true
     # set lingva instance in url, by default it will use the official instance
     # url: https://lingva.ml
 
@@ -1230,6 +1240,7 @@ engines:
     suggestion_xpath: /html/body/main/div/div/div/form/div/div[@class="callout-block"]/p/span/a[@class="link"]
     first_page_num: 1
     categories: [it, packages]
+    disabled: true
     about:
       website: https://pypi.org
       wikidata_id: Q2984686
@@ -1243,7 +1254,7 @@ engines:
     engine: qwant
     shortcut: qw
     categories: [general, web]
-    disabled: false
+    disabled: true
     additional_tests:
       rosebud: *test_rosebud
 
@@ -1252,7 +1263,7 @@ engines:
     engine: qwant
     shortcut: qwn
     categories: news
-    disabled: false
+    disabled: true
     network: qwant
 
   - name: qwant images
@@ -1260,7 +1271,7 @@ engines:
     engine: qwant
     shortcut: qwi
     categories: [images, web]
-    disabled: false
+    disabled: true
     network: qwant
 
   - name: qwant videos
@@ -1268,7 +1279,7 @@ engines:
     engine: qwant
     shortcut: qwv
     categories: [videos, web]
-    disabled: false
+    disabled: true
     network: qwant
 
   # - name: library
@@ -1318,6 +1329,7 @@ engines:
   - name: sepiasearch
     engine: sepiasearch
     shortcut: sep
+    disabled: true
 
   - name: soundcloud
     engine: soundcloud
@@ -1497,6 +1509,7 @@ engines:
   - name: yahoo news
     engine: yahoo_news
     shortcut: yhn
+    disabled: true
 
   - name: youtube
     shortcut: yt
@@ -1671,6 +1684,7 @@ engines:
   - name: dictzone
     engine: dictzone
     shortcut: dc
+    disabled: true
 
   - name: mymemory translated
     engine: translated
